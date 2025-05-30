@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Scroll Bar Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      height: 3000px; /* So you can scroll */
+      background: transparent;
+      margin: 0;
+    }
+    #chartContainer {
+      position: sticky;
+      top: 50px;
+      width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="chartContainer">
+    <canvas id="barChart" width="600" height="400"></canvas>
+  </div>
+  <script src="chart-scroll.js"></script>
+</body>
+</html>
