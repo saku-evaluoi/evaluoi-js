@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Line Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    #chartContainer {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    canvas {
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div id="chartContainer">
+    <canvas id="lineChart" width="600" height="500"></canvas>
+  </div>
+
+  <script src="line-scroll.js"></script>
+</body>
+</html>
