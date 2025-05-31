@@ -50,9 +50,10 @@ function getColor(value) {
 
 // Update chart on scroll
 window.addEventListener('message', (event) => {
-      if (event.data === 'scroll-update') {
-        chart.data.datasets[0].data = Array.from({ length: 6 }, () => getRandomValue());
-        chart.data.datasets[0].backgroundColor = chart.data.datasets[0].data.map(getColor);
-        chart.update();
-      }
+  console.log('Message received from parent:', event.data);
+  if (event.data === 'scroll-update') {
+    chart.data.datasets[0].data = Array.from({ length: 6 }, () => getRandomValue());
+    chart.data.datasets[0].backgroundColor = chart.data.datasets[0].data.map(getColor);
+    chart.update();
+  }
 });
